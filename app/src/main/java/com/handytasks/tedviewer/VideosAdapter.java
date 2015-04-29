@@ -23,7 +23,7 @@ public class VideosAdapter extends ArrayAdapter<Video> {
         Activity activity = (Activity) getContext();
         LayoutInflater inflater = activity.getLayoutInflater();
 
-        View rowView = inflater.inflate(R.layout.video_item, parent, true);
+        View rowView = inflater.inflate(R.layout.video_item, null);
         Video item = getItem(position);
 
         TextView textView = (TextView) rowView.findViewById(R.id.title);
